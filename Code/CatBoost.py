@@ -17,7 +17,7 @@ data = pd.read_csv(DATA_PATH)
 # home page
 @app.route('/')
 def home():
-    return render_template('CatBoost.html')
+    return render_template('index.html')
 
 # prediction endpoint
 @app.route('/predict')
