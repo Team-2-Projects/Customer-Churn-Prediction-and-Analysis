@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telco Churn Prediction</title>
+    <!-- css path-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='CatBoost.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Telco Customer Churn Prediction</h1>
+        <form id="churnForm">
+            <label for="customerID">Enter Customer ID:</label>
+            <input type="text" id="customerID" required>
+            <button type="submit">Check</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <!-- js path -->
+    <script src="{{ url_for('static', filename='CatBoost.js') }}"></script>
+</body>
+</html>
